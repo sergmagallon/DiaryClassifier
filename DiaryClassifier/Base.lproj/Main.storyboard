@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ewn-Mi-ukD">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Diary-->
+        <scene sceneID="jIl-9r-orG">
+            <objects>
+                <viewController id="0ay-yj-Xiy" customClass="EntriesViewController" customModule="DiaryClassifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5i5-Xd-kDK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hJA-ad-laL">
+                                <rect key="frame" x="54" y="54" width="306" height="749"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GJ7-H7-F8a">
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="244.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZ9-6G-8AL">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="244.33333333333334"/>
+                                                <color key="backgroundColor" red="0.95536082980000003" green="0.71343535179999995" blue="0.73333162070000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="AFFECTION">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="0ay-yj-Xiy" eventType="touchUpInside" id="fwx-SA-sxg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="334-OX-Oix">
+                                                <rect key="frame" x="158" y="0.0" width="148" height="244.33333333333334"/>
+                                                <color key="backgroundColor" red="0.97882467510000004" green="0.87704682349999996" blue="0.74507641790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="LEISURE">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="0ay-yj-Xiy" eventType="touchUpInside" id="e4K-Zb-bMl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yZg-HA-Z3c">
+                                        <rect key="frame" x="0.33333333333334281" y="252.33333333333331" width="305.33333333333326" height="244.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTj-Kl-EGz">
+                                                <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="244.33333333333334"/>
+                                                <color key="backgroundColor" red="0.85174940046995662" green="0.91749549306395939" blue="0.64689532784805204" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="EXERCISE">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="0ay-yj-Xiy" eventType="touchUpInside" id="ziV-pu-vzW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVq-sl-1VZ">
+                                                <rect key="frame" x="157.66666666666669" y="0.0" width="147.66666666666669" height="244.33333333333334"/>
+                                                <color key="backgroundColor" red="0.76304466480136124" green="0.95860652362233501" blue="0.78005070112521124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="BONDING">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="0ay-yj-Xiy" eventType="touchUpInside" id="uXA-N7-2eG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="oVq-sl-1VZ" firstAttribute="width" secondItem="gTj-Kl-EGz" secondAttribute="width" id="7A2-f4-oWU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U07-2r-9ka">
+                                        <rect key="frame" x="0.66666666666665719" y="504.66666666666657" width="304.66666666666674" height="244.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIr-QO-wGQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="244.33333333333334"/>
+                                                <color key="backgroundColor" red="0.70632395851394369" green="0.81703120691376785" blue="0.92587143308121822" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="ENJOY">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="0ay-yj-Xiy" eventType="touchUpInside" id="Bsq-Tf-2MO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" verticalHuggingPriority="253" horizontalCompressionResistancePriority="756" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeb-rb-J3a">
+                                                <rect key="frame" x="105" y="0.0" width="94.666666666666686" height="244.33333333333334"/>
+                                                <color key="backgroundColor" red="0.87365256014263959" green="0.84500423615621778" blue="0.66631050916906576" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="ACHIEVEMENT">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="0ay-yj-Xiy" eventType="touchUpInside" id="ho4-Ic-E6G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqf-OP-mvD">
+                                                <rect key="frame" x="209.66666666666663" y="0.0" width="95" height="244.33333333333334"/>
+                                                <color key="backgroundColor" red="0.85968315895245317" green="0.926041654231472" blue="0.65292093971437104" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="NATURE">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="0ay-yj-Xiy" eventType="touchUpInside" id="65R-Rr-VhQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="U07-2r-9ka" firstAttribute="width" secondItem="hJA-ad-laL" secondAttribute="width" multiplier="0.833333" constant="50" id="1oN-7l-tMy"/>
+                                    <constraint firstItem="GJ7-H7-F8a" firstAttribute="width" secondItem="hJA-ad-laL" secondAttribute="width" multiplier="0.411458" constant="180" id="V9u-11-2R7"/>
+                                    <constraint firstItem="yZg-HA-Z3c" firstAttribute="width" secondItem="hJA-ad-laL" secondAttribute="width" multiplier="0.817708" constant="55" id="jfZ-cR-FOx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RfK-rO-ySF" firstAttribute="bottom" secondItem="hJA-ad-laL" secondAttribute="bottom" constant="10" id="0p6-sg-XeO"/>
+                            <constraint firstItem="hJA-ad-laL" firstAttribute="top" secondItem="RfK-rO-ySF" secondAttribute="top" constant="10" id="8xT-H8-usQ"/>
+                            <constraint firstItem="hJA-ad-laL" firstAttribute="centerX" secondItem="RfK-rO-ySF" secondAttribute="centerX" id="DSg-ma-b26"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RfK-rO-ySF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Diary" image="diary" selectedImage="diary" id="gTs-2w-fFa">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="3"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="jST-P6-ohI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="KTi-yE-hFK" kind="show" identifier="toDiary" id="Wjo-eR-Ord"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Txe-en-g7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="1248"/>
+        </scene>
+        <!--Diary Table View Controller-->
+        <scene sceneID="7as-99-K0Y">
+            <objects>
+                <viewController id="KTi-yE-hFK" customClass="DiaryTableViewController" customModule="DiaryClassifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gAJ-gd-6Xe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dSJ-p4-NJ8">
+                                <rect key="frame" x="0.0" y="18" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryEntryCell" rowHeight="148" id="Z73-xg-94Y" customClass="DiaryEntryCell" customModule="DiaryClassifier" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="148"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z73-xg-94Y" id="f07-7l-uKG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlH-pw-Dms">
+                                                    <rect key="frame" x="20" y="14" width="78.666666666666671" height="36"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm3-dR-moo">
+                                                    <rect key="frame" x="21" y="73" width="61" height="47"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="contentPressed:" destination="Z73-xg-94Y" eventType="touchUpInside" id="M45-Ts-I9g"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YlH-pw-Dms" secondAttribute="trailing" constant="20" symbolic="YES" id="C1h-Sc-Osd"/>
+                                                <constraint firstItem="gm3-dR-moo" firstAttribute="top" secondItem="YlH-pw-Dms" secondAttribute="bottom" constant="23" id="Dmw-Rj-Wbl"/>
+                                                <constraint firstItem="gm3-dR-moo" firstAttribute="leading" secondItem="f07-7l-uKG" secondAttribute="leading" constant="21" id="FCN-HL-3fj"/>
+                                                <constraint firstItem="YlH-pw-Dms" firstAttribute="top" secondItem="f07-7l-uKG" secondAttribute="top" constant="14" id="Jj5-sa-GDO"/>
+                                                <constraint firstItem="YlH-pw-Dms" firstAttribute="leading" secondItem="f07-7l-uKG" secondAttribute="leading" constant="20" id="OZr-CO-HLr"/>
+                                                <constraint firstAttribute="bottom" secondItem="gm3-dR-moo" secondAttribute="bottom" constant="28" id="r5s-Dc-Iiw"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gm3-dR-moo" secondAttribute="trailing" constant="20" symbolic="YES" id="raU-62-Es1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Content" destination="gm3-dR-moo" id="9TH-fn-MFX"/>
+                                            <outlet property="Date" destination="YlH-pw-Dms" id="K4g-aA-dcP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dSJ-p4-NJ8" firstAttribute="leading" secondItem="999-cI-FMe" secondAttribute="leading" id="0ce-ZK-PJ2"/>
+                            <constraint firstItem="999-cI-FMe" firstAttribute="bottom" secondItem="dSJ-p4-NJ8" secondAttribute="bottom" constant="67" id="HhR-JV-Eah"/>
+                            <constraint firstItem="dSJ-p4-NJ8" firstAttribute="centerX" secondItem="gAJ-gd-6Xe" secondAttribute="centerX" id="L94-gb-8Pt"/>
+                            <constraint firstItem="dSJ-p4-NJ8" firstAttribute="top" secondItem="999-cI-FMe" secondAttribute="top" constant="18" id="Rmr-xf-FJn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="999-cI-FMe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hiq-B2-7UI"/>
+                    <connections>
+                        <outlet property="DiaryTableView" destination="dSJ-p4-NJ8" id="55k-XG-1eJ"/>
+                        <segue destination="jMC-Bu-yLd" kind="show" identifier="displayEntry" id="ggW-Gd-cxm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gke-47-W31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671.0144927536232" y="1195.9821428571429"/>
+        </scene>
+        <!--Display Entry View Controller-->
+        <scene sceneID="mbU-Ow-sHh">
+            <objects>
+                <viewController id="jMC-Bu-yLd" customClass="DisplayEntryViewController" customModule="DiaryClassifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6hL-p7-jYh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oZv-xd-UcC">
+                                <rect key="frame" x="20" y="20" width="374" height="778"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="29"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="revertBack:" destination="jMC-Bu-yLd" eventType="touchUpInside" id="r0r-Dj-b9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oZv-xd-UcC" firstAttribute="leading" secondItem="uhu-6T-p8r" secondAttribute="leading" constant="20" id="GEn-a1-gaM"/>
+                            <constraint firstItem="uhu-6T-p8r" firstAttribute="bottom" secondItem="oZv-xd-UcC" secondAttribute="bottom" constant="10" id="L6w-4V-NVF"/>
+                            <constraint firstItem="oZv-xd-UcC" firstAttribute="top" secondItem="uhu-6T-p8r" secondAttribute="top" constant="20" id="ThT-hR-oXu"/>
+                            <constraint firstItem="uhu-6T-p8r" firstAttribute="trailing" secondItem="oZv-xd-UcC" secondAttribute="trailing" constant="20" id="dar-tK-2Ik"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uhu-6T-p8r"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HnZ-xV-7CC"/>
+                    <connections>
+                        <outlet property="fullEntry" destination="oZv-xd-UcC" id="ZRP-nY-Efx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFz-Ag-DLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2526.0869565217395" y="1205.3571428571429"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="XwQ-bq-lSQ">
+            <objects>
+                <viewController id="UaF-ae-GCN" customClass="HomePageViewController" customModule="DiaryClassifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c2A-3w-qdh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How are you feeling?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="guV-IR-AWc">
+                                <rect key="frame" x="30" y="103" width="354" height="685"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgY-ke-fQs">
+                                <rect key="frame" x="0.0" y="29" width="414" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Smart Journal" id="bjT-cS-xJd"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uf4-nI-7sf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="29"/>
+                                <color key="backgroundColor" name="newColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="guV-IR-AWc" firstAttribute="top" secondItem="pgY-ke-fQs" secondAttribute="bottom" constant="30" id="Rrg-g0-e6R"/>
+                            <constraint firstItem="pgY-ke-fQs" firstAttribute="centerX" secondItem="guV-IR-AWc" secondAttribute="centerX" id="SvG-dP-CMb"/>
+                            <constraint firstItem="Uf4-nI-7sf" firstAttribute="top" secondItem="c2A-3w-qdh" secondAttribute="topMargin" constant="-44" id="W4G-SY-kcf"/>
+                            <constraint firstItem="guV-IR-AWc" firstAttribute="centerX" secondItem="bPX-B9-aCQ" secondAttribute="centerX" id="YOj-gg-X8c"/>
+                            <constraint firstItem="Uf4-nI-7sf" firstAttribute="leading" secondItem="c2A-3w-qdh" secondAttribute="leading" id="bu0-ms-yzX"/>
+                            <constraint firstItem="bPX-B9-aCQ" firstAttribute="bottom" secondItem="guV-IR-AWc" secondAttribute="bottom" constant="25" id="c5h-es-d0f"/>
+                            <constraint firstAttribute="trailing" secondItem="Uf4-nI-7sf" secondAttribute="trailing" id="ccT-OS-DnS"/>
+                            <constraint firstItem="guV-IR-AWc" firstAttribute="leading" secondItem="bPX-B9-aCQ" secondAttribute="leading" constant="30" id="iew-er-3BZ"/>
+                            <constraint firstItem="pgY-ke-fQs" firstAttribute="top" secondItem="Uf4-nI-7sf" secondAttribute="bottom" id="l0D-W4-e9c"/>
+                            <constraint firstItem="pgY-ke-fQs" firstAttribute="top" secondItem="bPX-B9-aCQ" secondAttribute="top" constant="-15" id="s87-B6-Y8p"/>
+                            <constraint firstItem="pgY-ke-fQs" firstAttribute="leading" secondItem="bPX-B9-aCQ" secondAttribute="leading" id="zPb-9a-Ocj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bPX-B9-aCQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="write" selectedImage="write" id="7Ao-Xk-Flr">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="3"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="entryTextView" destination="guV-IR-AWc" id="7bV-p5-y3h"/>
+                        <outlet property="navBar" destination="bjT-cS-xJd" id="po0-eu-agd"/>
+                        <outlet property="navigationBar" destination="pgY-ke-fQs" id="P56-Ke-do4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCe-4B-Cix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.88405797101461" y="492.85714285714283"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UqM-hO-omI">
+            <objects>
+                <tabBarController id="ewn-Mi-ukD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I90-HM-mn7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UaF-ae-GCN" kind="relationship" relationship="viewControllers" id="8Za-Oe-qDG"/>
+                        <segue destination="0ay-yj-Xiy" kind="relationship" relationship="viewControllers" id="2vN-7v-wPf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXg-56-WoQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40" y="859"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="diary" width="32" height="32"/>
+        <image name="write" width="32" height="32"/>
+        <namedColor name="newColor">
+            <color red="0.97600001096725464" green="0.97299998998641968" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
